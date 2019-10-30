@@ -1,0 +1,98 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+void pause();
+
+int main()
+{
+	bool bandera = false;
+	char tecla;
+	do
+	{
+		system("cls");
+		cin.clear();
+		cout << "calculadora" << endl;
+		cout << "1.Sumar" << endl;
+		cout << "2.restar" << endl;
+		cout << "3.multiplicar" << endl;
+		cout << "4.dividir" << endl;
+		cout << "5.salir" << endl;
+		cin >> tecla;
+		switch (tecla)
+		{
+		case '1':
+			system("cls");
+			cout << "has elegido sumar";
+			int main;
+			{
+				int n1, n2, suma;
+				cout << "introduce el 1er digito";
+				cin >> n1;
+				cout << "introduce el segundo numero";
+				cin >> n2;
+				suma = n1 + n2;
+				cout << "EL RESULTADO DE LA SUMA ES DE:" << suma;
+			} 
+			pause();
+			break;
+		case '2':
+			system("cls");
+			cout << "has elegido restar";
+			int mein;
+			{
+				int n3, n4, resta;
+				cout << "introduce el 1er digito";
+				cin >> n3;
+				cout << "introduce el segundo numero";
+				cin >> n4;
+				resta = n3 - n4;
+				cout << "EL RESULTADO DE LA RESTA ES DE:" << resta;
+			}
+			pause();
+			break;
+		case '3':
+			system("cls");
+			cout << "has elegido multiplicar";
+			int meif;
+			{
+				int n5, n6, prod;
+				cout << "introduce el 1er digito";
+				cin >> n5;
+				cout << "introduce el segundo numero";
+				cin >> n6;
+				prod = n5 * n6;
+				cout << "EL RESULTADO DE LA MULTIPLICACION ES DE:" << prod;
+			}
+			pause();
+			break;
+		case '4':
+			system("cls");
+			cout << "has elegido dividir";
+			int meih;
+			{
+				int n3, n4, res;
+				cout << "introduce el 1er digito";
+				cin >> n3;
+				cout << "introduce el segundo numero";
+				cin >> n4;
+				res = n3 - n4;
+				cout << "EL RESULTADO DE LA DIVISION ES DE:" << res;
+			}
+			pause();
+			break;
+		case '5':
+			bandera = true;
+			//exit
+			break;
+		}
+	} while (bandera != true);
+	return 0;
+}
+
+void pause()
+{
+	cout << "Pulsa una tecla para continuar";
+	getwchar();
+	getwchar();
+}
